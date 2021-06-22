@@ -1,0 +1,16 @@
+body {
+    padding: 40px;
+    font-family: sans-serif;
+}
+
+h1, h2 {
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.popino-image {
+    width: 50%;
+    display: block;
+    margin: 30px auto
+}

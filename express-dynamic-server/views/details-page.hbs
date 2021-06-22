@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ironhack page</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <h1>¡Bienvenid@ a Ironhack, {{name}}!</h1>
+    <p>Nos encanta tenerte en nuestro Bootcamp de {{{course}}}</p>
+
+    <hr>
+
+    <h3>Estado de pago</h3>
+    {{#if pending}}
+    <p>Aún tienes un pago pendiente por valor de {{debt}}€.</p>
+    {{else}}
+    <p>Tus pagos están al corriente</p>
+    {{/if}}
+
+    <hr>
+
+    <h3>Materias del Bootcamp de {{{course}}} </h3>
+
+    <ul>
+        {{#each topics}}
+        <li>{{this}}</li>
+        {{else}}
+        <li>Aún no están disponibles las asignaturas, ¡vuelve pronto!</li>
+        {{/each}}
+    </ul>
+
+    <hr>
+
+    <h3>Tus datos de contacto</h3>
+
+    {{#with address}}
+    <p>Calle {{street}}, número {{number}}.</p>
+    <p>{{code}}, {{city}}.</p>
+    <p>{{country}}.</p>
+    {{/with}}
+
+    <hr>
+
+    <h3>Avisos importantes</h3>
+    <ul>
+        {{#if confirmed}}
+        <li>El Bootcamp está confirmado</li>
+        {{/if}}
+
+        {{#unless bankAccount}}
+        <li>Debes remitirnos tu cuenta bancaria a la mayor brevedad</li>
+        {{/unless}}
+    </ul>
+</body>
+
+</html>
