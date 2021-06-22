@@ -42,9 +42,9 @@
   - `.send()`: muestra el código pasado como argumento en el cliente.
   - `.sendFile()`: muestra en el cliente el archivo enlazado mediante el path absoluto argumentado.
   - `.render()`: renderiza la vista cuyo nombre sea argumentado.
-  ````javascript
-  app.get('/', (req, res) => res.render('nombre-vista'))
-  ````
+    ````javascript
+    app.get('/', (req, res) => res.render('nombre-vista'))
+    ````
   
   
 ## Main points: dynamic templating
