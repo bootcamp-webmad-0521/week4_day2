@@ -32,7 +32,7 @@
   - Callback con los parámetros por defecto `req` (petición) y `res` (respuesta).
   
 ## Main points: Nodemon
-- El módulo global Nodemon atiende a los cambios en un archivo, siendo iniciado mediante:
+- El módulo global Nodemon, instalado mediante el comando `npm i nodemon --global`, atiende a los cambios en un archivo, siendo iniciado mediante:
   - `nodemon`: escucha los cambios sobre el archivo indicado como *entry point* (propiedad `main`de `package.json`).
   - `nodemon`*`nombre_archivo`*: escucha los cambios realizados en el archivo indicado.
 
